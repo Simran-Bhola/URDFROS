@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="URDFROS">
+  <link
+    name="LINK1">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 1.38777878078145E-17 0.00913899464565848"
+        rpy="0 0 0" />
+      <mass
+        value="0.0881112294736471" />
+      <inertia
+        ixx="4.28576506071502E-05"
+        ixy="0"
+        ixz="-2.63572309757595E-22"
+        iyy="4.11321029955712E-05"
+        iyz="4.8136187875801E-23"
+        izz="7.86901550473029E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDFROS/meshes/LINK1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDFROS/meshes/LINK1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="LINK2">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 -2.77555756156289E-17 -0.0154947643979058"
+        rpy="0 0 0" />
+      <mass
+        value="0.0450033147626738" />
+      <inertia
+        ixx="1.10484008979201E-05"
+        ixy="6.35274710440725E-22"
+        ixz="3.02297097284577E-22"
+        iyy="1.10484008979201E-05"
+        iyz="-5.41853137257625E-22"
+        izz="1.08340767902157E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDFROS/meshes/LINK2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDFROS/meshes/LINK2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JOINT1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.049"
+      rpy="0 0 0" />
+    <parent
+      link="LINK1" />
+    <child
+      link="LINK2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="LINK3-1">
+    <inertial>
+      <origin
+        xyz="5.9466429235655E-05 1.68887434644355E-05 0.0061407102790253"
+        rpy="0 0 0" />
+      <mass
+        value="0.00238301971976767" />
+      <inertia
+        ixx="1.9573602893199E-07"
+        ixy="-2.02924677217103E-10"
+        ixz="-1.75143091145477E-09"
+        iyy="1.96392909144847E-07"
+        iyz="-4.97414553714287E-10"
+        izz="3.02994731542616E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDFROS/meshes/LINK3-1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDFROS/meshes/LINK3-1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JOINT-21"
+    type="continuous">
+    <origin
+      xyz="0 0.0125 0"
+      rpy="0 0 0" />
+    <parent
+      link="LINK2" />
+    <child
+      link="LINK3-1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="LINK3-3">
+    <inertial>
+      <origin
+        xyz="2.01072091755572E-05 -5.84567019340787E-05 0.00614071027902541"
+        rpy="0 0 0" />
+      <mass
+        value="0.00238301971976767" />
+      <inertia
+        ixx="1.9636885063274E-07"
+        ixy="2.37493522381655E-10"
+        ixz="-5.92206193408728E-10"
+        iyy="1.95760087444097E-07"
+        iyz="1.72169198764894E-09"
+        izz="3.02994731542616E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDFROS/meshes/LINK3-3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDFROS/meshes/LINK3-3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JOINT-22"
+    type="continuous">
+    <origin
+      xyz="0.010825 -0.00625 0"
+      rpy="0 0 0" />
+    <parent
+      link="LINK2" />
+    <child
+      link="LINK3-3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="LINK3-2">
+    <inertial>
+      <origin
+        xyz="-6.06158776054744E-05 -1.21326519760823E-05 0.0061407102790253"
+        rpy="0 0 0" />
+      <mass
+        value="0.00238301971976767" />
+      <inertia
+        ixx="1.95708139854141E-07"
+        ixy="-1.48596233353931E-10"
+        ixz="1.78528496039945E-09"
+        iyy="1.96420798222696E-07"
+        iyz="3.57336096717783E-10"
+        izz="3.02994731542616E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDFROS/meshes/LINK3-2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDFROS/meshes/LINK3-2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JOINT-23"
+    type="continuous">
+    <origin
+      xyz="-0.010825 -0.00625 0"
+      rpy="0 0 0" />
+    <parent
+      link="LINK2" />
+    <child
+      link="LINK3-2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
